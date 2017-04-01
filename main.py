@@ -31,7 +31,7 @@ pushover.init(os.environ['PUSHOVER_TOKEN'])
 pushover.Client(os.environ['PUSHOVER_USER']).send_message("Pixelbar is now " + r['state'], title="Pixelbar")
 
 f.seek(0)
-f.write("open")
+f.write(r['state'])
 f.truncate()
 f.close()
 print("Done.")
