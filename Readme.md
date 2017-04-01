@@ -15,3 +15,5 @@ PIXELSTATE
 ```
 
 You'll need an account with https://pushover.net. The `PIXELSTATE` variable is the link to a file on your file system to persist the last state.
+
+Create a cronjob or something to run the python script `main.py` frequently.
